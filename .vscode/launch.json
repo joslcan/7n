@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SevenpharmaApplication<sevenpharma>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.proyectofinal.sevenpharma.SevenpharmaApplication",
+            "projectName": "sevenpharma",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
