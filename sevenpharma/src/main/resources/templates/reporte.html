@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Reportes</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+
+    <h2 class="mb-4">
+        Reportes del Sistema
+    </h2>
+
+    <div class="card p-4 shadow">
+        <p>Seleccione el tipo de reporte que desea generar:</p>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="#" class="btn btn-outline-primary w-100">Reporte de Licitaciones</a>
+            </li>
+
+            <li class="list-group-item">
+                <a href="#" class="btn btn-outline-success w-100">Reporte de Entregas</a>
+            </li>
+
+            <li class="list-group-item">
+                <a href="#" class="btn btn-outline-info w-100">Reporte General</a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>
