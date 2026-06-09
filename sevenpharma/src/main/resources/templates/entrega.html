@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registro de Entregas</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+</head>
+
+<body class="bg-light">
+<div class="container mt-5">
+    <h2 class="mb-4">
+        Registro de Entregas
+    </h2>
+    
+    <form th:action="@{/entregas}" method="post" class="card p-4 shadow">
+
+        <div class="mb-3">
+            <label for="hospital" class="form-label">Hospital</label>
+            <input type="text" class="form-control" id="hospital" name="hospital" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="licitacion" class="form-label">Nº Licitación</label>
+            <input type="text" class="form-control" id="licitacion" name="licitacion" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="medicamento" class="form-label">Medicamento</label>
+            <input type="text" class="form-control" id="medicamento" name="medicamento" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="cantidad" class="form-label">Cantidad</label>
+            <input type="number" class="form-control" id="cantidad" name="cantidad" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="fecha" class="form-label">Fecha de Entrega</label>
+            <input type="date" class="form-control" id="fecha" name="fecha" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="estado" class="form-label">Estado</label>
+            <select class="form-select" id="estado" name="estado" required>
+                <option value="Pendiente">Pendiente</option>
+                <option value="En Proceso">En Proceso</option>
+                <option value="Completada">Completada</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-success w-100">Registrar Entrega</button>
+    </form>
+</div>
+
+<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>
