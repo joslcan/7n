@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dashboard - SEVEN PHARMA</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+</head>
+<body class="bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">SEVEN PHARMA</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" th:href="@{/licitaciones}">Licitaciones</a></li>
+                <li class="nav-item"><a class="nav-link" th:href="@{/entregas}">Entregas</a></li>
+                <li class="nav-item"><a class="nav-link" th:href="@{/reportes}">Reportes</a></li>
+                <li class="nav-item"><a class="nav-link" th:href="@{/login}">Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <h2 class="mb-4">Panel Principal</h2>
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Gestión de Licitaciones</h5>
+                    <p class="card-text">Registrar y consultar contratos adjudicados.</p>
+                    <a th:href="@{/licitaciones}" class="btn btn-outline-primary">Ir a Licitaciones</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Gestión de Entregas</h5>
+                    <p class="card-text">Administrar pedidos y estados de entrega.</p>
+                    <a th:href="@{/entregas}" class="btn btn-outline-success">Ir a Entregas</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Reportes</h5>
+                    <p class="card-text">Generar informes y visualizar indicadores.</p>
+                    <a th:href="@{/reportes}" class="btn btn-outline-info">Ir a Reportes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>
