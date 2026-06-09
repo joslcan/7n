@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registro de Licitaciones</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+</head>
+
+<body class="bg-light">
+<div class="container mt-5">
+    <h2 class="mb-4">Registro de Licitaciones</h2>
+    
+    <form th:action="@{/licitaciones}" method="post" class="card p-4 shadow">
+        
+        <div class="mb-3">
+            <label for="codigo" class="form-label">
+                Código de Licitación
+            </label>
+            <input type="text" class="form-control" id="codigo" name="codigo" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="hospital" class="form-label">
+                Hospital
+            </label>
+            <input type="text" class="form-control" id="hospital" name="hospital" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="medicamento" class="form-label">
+                Medicamento
+            </label>
+            <input type="text" class="form-control" id="medicamento" name="medicamento" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="fecha" class="form-label">
+                Fecha de Entrega
+            </label>
+            <input type="date" class="form-control" id="fecha" name="fecha" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">
+            Registrar Licitación
+        </button>
+
+    </form>
+    
+</div>
+
+<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>
